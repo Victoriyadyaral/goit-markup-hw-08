@@ -427,6 +427,7 @@ body {
   .mobile-menu-close__btn:hover .mobile-menu-close__icon,
   .mobile-menu-close__btn:focus .mobile-menu-close__icon {
     fill: var(--accent-color);
+    outline: none;
   }
   .mobile-menu-nav {
     list-style: none;
@@ -444,6 +445,9 @@ body {
   }
   .mobile-menu-nav__link:focus, .mobile-menu-nav__link:hover {
     color: var(--accent-color);
+  }
+  .mobile-menu-close__btn:hover ~ .mobile-menu-nav__link {
+    color: var(--primary-text-title);
   }
   .mobile-menu__link--current {
     color: var(--accent-color);

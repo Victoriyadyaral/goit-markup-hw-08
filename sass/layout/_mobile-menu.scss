@@ -38,9 +38,11 @@
         .mobile-menu-close__btn:hover &,
         .mobile-menu-close__btn:focus & {
            fill: var(--accent-color);
+           outline: none;
         }
     }
 
+       
     .mobile-menu-nav {
         list-style: none;
     }
@@ -62,6 +64,10 @@
         &:hover {
         color: var(--accent-color);
         }
+    }
+
+    .mobile-menu-close__btn:hover~.mobile-menu-nav__link {
+        color: var(--primary-text-title);
     }
 
     .mobile-menu__link--current {
