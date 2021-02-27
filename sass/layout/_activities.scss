@@ -1,0 +1,36 @@
+/*ACTIVITIES*/
+
+.activities {
+    padding-bottom: 94px;
+
+    @media screen and (max-width: 1199px) {
+    & {
+      display: none;
+      }
+    }
+}
+
+.activities__list {
+    @extend %list;
+    display: flex;
+}
+
+.activities__item {
+    position: relative;
+}
+
+.activities__description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    text-align: center;
+    font-family: Roboto;
+    font-weight: 700;
+    line-height: 1.143;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+    background-color: rgba(47, 48, 58, 0.8);
+}

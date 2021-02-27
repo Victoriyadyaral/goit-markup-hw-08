@@ -1,0 +1,103 @@
+/*OUR TEAM*/
+
+.our-team{
+    @extend %section-padding;
+    background-color: var(--second-main-background);
+}
+
+.our-team__list {
+    @extend %list;
+    
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+}
+
+.our-team-member {
+    background-color: var(--primary-white-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+    @media screen and (max-width: 767px) {
+    &{
+        max-width: 450px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+      }
+    }
+
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    &:not(:nth-child(2n)) {
+       margin-right: 30px;
+    }
+
+    &:not(:nth-last-child(-n+2)) {
+       margin-bottom: 30px;
+    }
+   }
+
+    @media screen and (min-width: $desktop) {
+    & {
+      margin-bottom: 0;
+    }
+   }
+}
+
+.our-team-member__information {
+    padding-top: 30px;
+    text-align: center;
+    padding-bottom: 24px;
+
+    @media screen and (min-width: $desktop) {
+        padding-right: 32px;
+        padding-bottom: 30px;
+        padding-left: 32px;
+    }
+}
+
+.our-team-member__name {
+    @include fontsProperty(500, 16px, 1.188);    
+    margin-bottom: 10px;
+    color: var(--primary-text-title);
+    text-align: center;
+}
+
+.our-team-member__job { 
+    @include fontsProperty(400, 16px, 1.188);
+    margin-bottom: 16px;   
+    text-align: center;
+}
+
+.examples__title {
+    @include fontsProperty(700, 18px, 2);
+    margin-bottom: 4px;
+    color: var(--primary-text-title);
+    letter-spacing: 0.06em;
+}
+
+.examples__text {
+    @include fontsProperty(400, 16px, 1.875);
+    color: var(--primary-text-color);
+}
+
+.examples__description {
+    padding: 20px 24px;
+
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        padding-top: 20px;
+        padding-right: 24px;
+        padding-bottom: 56px;
+        padding-left: 24px;
+    }
+}
+
+
+

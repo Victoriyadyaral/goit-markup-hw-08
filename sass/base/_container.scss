@@ -1,0 +1,17 @@
+/*CONTAINER*/
+
+.container {
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 480px;
+
+    @include screen('tablet') {
+     max-width: 768px;
+   }
+   @include screen('desktop') {
+     max-width: 1200px;
+   }
+}

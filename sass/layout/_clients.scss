@@ -1,0 +1,93 @@
+/*CLIENTS*/
+
+.clients {
+    @extend %section-padding;
+}
+
+.clients__list {
+    @extend %list;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (min-width: $desktop) {
+        & {
+           flex-wrap: nowrap;
+        }
+    }
+}
+
+.clients__item {
+    width: 210px;
+    height: 90px;
+
+    @media screen and (max-width: 479px) {
+        width: 51%;
+
+        &:not(:last-child) {
+           margin-bottom: 30px;
+        }
+    }
+
+    @media screen and (min-width: $mobile) and (max-width: 767px) {
+        &:not(:nth-child(2n)) {
+           margin-right: 30px;
+        }
+    
+        &:not(:nth-last-child(-n+2)) {
+           margin-bottom: 30px;
+        }
+    }
+
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+
+        width: 226px;
+        height: 90px;
+
+        &:not(:nth-child(3n)) {
+           margin-right: 30px;
+        }
+
+        &:not(:nth-last-child(-n+3)) {
+           margin-bottom: 30px;
+        }
+   }
+
+    @media screen and (min-width: $desktop) {
+        & {
+           width: 170px;
+           height: 90px;
+           margin-bottom: 0;
+        }
+    }
+
+    & .clients__link:hover,
+    & .clients__link:focus {
+    border-color: var(--accent-color);
+    outline: none;
+}
+}
+
+.clients__link {
+    @extend %link;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--icon-color);
+    border-radius: 4px;
+    transition: border-color var(--transition-duration) var(--timing-function);
+}
+
+.clients__icon {
+    fill: var(--icon-color);
+    transition: fill var(--transition-duration) var(--timing-function);
+
+    .clients__link:hover &,
+    .clients__link:focus & {
+    fill: var(--accent-color);
+}
+}

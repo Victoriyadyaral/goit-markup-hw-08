@@ -1,0 +1,39 @@
+/*LOGO*/
+
+.logo {
+    @extend %link;
+    @include fontsProperty(700, 0, 1.192);
+    display: block;
+    font-family: var(--logo-font);
+    transition: cursor var(--transition-duration) var(--timing-function);
+    padding-top: 16px;
+    padding-bottom: 16px;
+    
+    @media screen and (min-width: $tablet) and (max-width: 1199px) {
+        padding-top: 26px;
+        padding-bottom: 26px;
+        margin-right: 88px;
+    }
+    @media screen and (min-width: $desktop) {
+        padding-top: 24px;
+        padding-bottom: 25px;
+        margin-right: 93px;
+    }
+
+    &:hover,
+    &:focus {
+    cursor: pointer;
+}
+}
+
+.logo__first-part {
+    @include logoPart($accentColor);
+}
+
+.logo__second-part {
+    @include logoPart($logoColor);
+}
+
+.logo__next-part {
+    @include logoPart($whiteColor);
+}

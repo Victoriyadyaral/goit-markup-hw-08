@@ -1,0 +1,62 @@
+/*SOCIAL-LINKS for section "OUR TEAM" and FOOTER*/
+
+.social-links {
+    @extend %list;
+    display: flex;
+    justify-content: center;
+}
+
+.social-links__item {
+    width: 44px;
+    height: 44px;
+
+    &:not(:last-child) {
+    margin-right: 10px;
+}
+
+    & .social-links__link:hover,
+    & .social-links__link:focus {
+    background-color: var(--accent-color);
+    outline: none;
+}
+
+    & .social-links__link--rotate:hover,
+    & .social-links__link--rotate:focus {
+    transform: rotate(360deg);
+}
+}
+
+.social-links__link {
+    @extend %link;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color var(--transition-duration) var(--timing-function);
+}
+
+.social-links__link--rotate {
+    background-color: transparent;
+    transform: rotate(0deg);
+    transition: transform var(--transition-duration) var(--timing-function);
+}
+
+.social-links__link--footer {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-links__icon {
+    fill: var(--icon-color);
+    transition: fill var(--transition-duration) var(--timing-function);
+
+    .social-links__link:hover &,
+    .social-links__link:focus & {
+    fill: var(--primary-white-color);
+}
+}
+
+.social-links__icon--footer {
+    fill: var(--primary-white-color);
+}

@@ -1,0 +1,48 @@
+/*Палитра цветов*/
+/* цвет шрифта логотипа - color: #000000; #2196F3; #FFFFFF;*/
+/*основной цвет шрифта - color: #757575;*/
+/*основной цвет заголовков(h2,h3) - color: #212121;*/
+/*основной цвет заголовков(h1) - color: #FFFFFF;*/
+/*основной цвет акцента- color: #2196F3;*/
+/* цвет фона header - color: #FFFFFF;*/
+/* цвет фона footer - color: #2F303A;*/
+/* цвет фона main - color: #E5E5E5; #F5F4FA;*/
+/* цвет фона hero - color: #C4C4C4;*/
+/*цвет icon - color: #AFB1B8;*/
+
+/*Шрифты*/
+/*Основной шрифт - Roboto, font-weight: 400;*/
+/*Шрифт для h1 - Roboto, font-weight: 900;*/
+/*Шрифт для h2, button - Roboto, font-weight: 700;*/
+/*Шрифт для h3 - Roboto, font-weight: 500;*/
+/*Шрифт для logo - Raleway, font-weight: 700;*/
+/*Шрифт для .site-nav, .contact - Roboto, font-weight: 500;*/
+
+
+:root {
+    --primary-text-color: #757575;
+    --primary-text-title: #212121;
+    --accent-color: #2196F3;
+    --primary-white-color: #FFFFFF;
+    --footer-background-color: #2F303A;
+    --hero-background-color:#C4C4C4;
+    --primary-logo-color: #000000;
+    --second-main-background: #F5F4FA;
+    --primary-font: Roboto, sans-serif;
+    --logo-font: Raleway, sans-serif;
+    --icon-color: #AFB1B8;
+    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-duration: 250ms;
+}
+
+/*SCSS-переменные*/
+
+$accentColor: #2196F3;
+$whiteColor:  #FFFFFF;
+$logoColor: #000000;
+
+/*SCSS-переменные для медиа-запросов*/
+
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1200px;

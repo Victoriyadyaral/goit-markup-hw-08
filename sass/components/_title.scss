@@ -1,0 +1,13 @@
+/*Стили для h2*/
+
+.title {
+    @include fontsProperty(700, 28px, 1.1786);
+    margin-bottom: 30px;
+    color: var(--primary-text-title);
+    text-align: center;
+
+    @media screen and (min-width: $desktop) {
+        @include fontsProperty(700, 36px, 1.167);
+        margin-bottom: 50px;
+    }
+}
