@@ -66,10 +66,6 @@
         }
     }
 
-    .mobile-menu-close__btn:hover~.mobile-menu-nav__link {
-        color: var(--primary-text-title);
-    }
-
     .mobile-menu__link--current {
         color: var(--accent-color);
     }
