@@ -855,6 +855,12 @@ body {
   }
 }
 
+@media screen and (max-width: 320px) {
+  .form__feedback {
+    height: 100px;
+  }
+}
+
 .form__checkbox-wrapper {
   position: relative;
   display: -webkit-box;

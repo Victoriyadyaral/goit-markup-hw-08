@@ -134,7 +134,7 @@
 }
 }
 
-.form__feedback{
+.form__feedback {
     margin-bottom: 20px;
     resize: none;
     width: 100%;
@@ -168,6 +168,12 @@
         }
     }
 }
+}
+
+@media screen and (max-width: 320px) {
+    .form__feedback {
+        height: 100px;
+    }
 }
 
 .form__checkbox-wrapper {
