@@ -383,13 +383,14 @@ body {
 
 @media screen and (max-width: 767px) {
   .mobile-menu {
-    position: absolute;
+    position: fixed;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     z-index: 100;
+    overflow: auto;
     width: 100%;
     max-width: 480px;
     height: 100vh;
@@ -658,6 +659,12 @@ body {
   transition: -webkit-transform var(--transition-duration) var(--timing-function);
   transition: transform var(--transition-duration) var(--timing-function);
   transition: transform var(--transition-duration) var(--timing-function), -webkit-transform var(--transition-duration) var(--timing-function);
+}
+
+@media screen and (max-width: 767px) {
+  .modal {
+    overflow: auto;
+  }
 }
 
 @media screen and (min-width: 1200px) {

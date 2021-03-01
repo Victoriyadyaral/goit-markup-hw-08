@@ -30,6 +30,12 @@
     
     transition: transform var(--transition-duration) var(--timing-function);
 
+    @media screen and (max-width: 767px) {
+        & {
+            overflow: auto;
+        }
+    }
+
     @media screen and (min-width: $desktop) {
         & {
             max-width: 528px;
