@@ -748,6 +748,8 @@ body {
   line-height: 1.1667;
   margin-bottom: 4px;
   letter-spacing: 0.01em;
+  -webkit-transition: color var(--transition-duration) var(--timing-function);
+  transition: color var(--transition-duration) var(--timing-function);
 }
 
 .form__input {
@@ -773,6 +775,12 @@ body {
 .form__icon-wrap {
   position: relative;
   display: inline-block;
+}
+
+@media screen and (max-width: 767px) {
+  .form__label:focus-within .form__user-information {
+    color: var(--accent-color);
+  }
 }
 
 .form__icon {
